@@ -1,0 +1,26 @@
+.footer{
+    padding-bottom: 32px;
+}
+
+.footer_list{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_icon{
+    width: 64px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    &:not(:last-child){
+        margin-right: 16px;
+    }
+}
+
+.footer_svg{
+    fill: var(--white);
+
+}
