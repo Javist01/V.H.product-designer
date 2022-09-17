@@ -3,6 +3,17 @@
     padding-bottom: 64px;
 }
 
+.main_list{
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: -24px;
+        margin-bottom: -24px;
+    }
+}
+
 .main_item{
     width: 342px;
     height: 316px;
@@ -10,6 +21,25 @@
     &:not(:last-child){
         margin-bottom: 20px;
     }
+    
+    @media screen and (min-width:1200px) {
+        width: calc(100% / 3 - 24px);
+        margin-left: 24px;
+        margin-bottom: 24px;
+        width: 450px;
+        height: 320px;
+
+        &:nth-child(6){
+            width: 450px;
+            height: 320px;
+            background: rgba(255, 255, 255, 0.01);
+            backdrop-filter: blur(12px);
+        }
+    }
+
+    // @media screen and (min-width:1400px){
+    //     width: calc(100% / 3 - 24px);
+    // }
 }
 
 .main_mobail_crms{
@@ -23,16 +53,21 @@
 }
 
 .main_mobail_crms_item{
-    width: 44px;
-    height: 20px;
+    width: 41px;
+    height: 22px;
     border: 1px solid var(--white-gray);
     border-radius: 50px;
     &:not(:last-child){
         margin-right: 20px;
     }
+
+    @media screen and (min-width:1200px) {
+        display: none;
+    }
 }
 
 .name_items{
+    display: inline-block;
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 400;
@@ -40,15 +75,51 @@
     line-height: 16px;
     color: var(--white-gray);
     text-align: center;
-    padding: 2px;
+    padding: 2.5px;
 }
+
+// div_text
+// .main_text{
+
+// }
+
+
+.main_text_p{
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    color: var(--white);
+    text-align: center;
+}
+
+// .main_link{
+
+// }
 
 .main_img{
     padding-top: 30px;
     margin: 0 auto;
+    transition: 1s;
+    align-items: center;
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    @media screen and (min-width:1200px){
+        &:hover{
+            transform: scale(1.15);
+        }
+    }
+
+    &:hover .main_projectName .main_mobail_crms_item{
+        display: block;
+    }
 }
 
 .main_projectName{
+    display: inline-block;
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 500;
@@ -56,4 +127,12 @@
     line-height: 22px;
     color: var(--white-gray);
     padding: 30px 0 0 27px;
+
+    @media screen and (min-width:1200px) {
+        padding-left: 32px;
+        font-size: 20px;
+        line-height: 27px;
+        display: none;
+    }
+
 }

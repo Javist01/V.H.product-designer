@@ -18,9 +18,24 @@
     &:not(:last-child){
         margin-right: 16px;
     }
+    &:hover{
+        background: #FFFFFF;
+        box-shadow: 0px 1px 24px #9161B5;
+        border-radius: 2.42424e+07px;
+    }
 }
 
 .footer_svg{
     fill: var(--white);
 
+    .footer_icon:hover &{
+        fill: var(--block);
+    }
+
 }
+
+
+
+
+
+
