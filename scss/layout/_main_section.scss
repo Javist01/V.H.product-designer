@@ -42,6 +42,11 @@
     // }
 }
 
+.main_item-blur{
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(12px);
+}
+
 .main_mobail_crms{
     padding-top: 30px;
     padding-right: 35px;

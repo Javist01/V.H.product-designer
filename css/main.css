@@ -187,6 +187,11 @@ body {
   }
 }
 
+.main_item-blur {
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(12px);
+}
+
 .main_mobail_crms {
   padding-top: 30px;
   padding-right: 35px;
@@ -342,9 +347,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
   .footer_btn-up {
-    margin-right: 135px;
+    margin-right: 140px;
   }
 }
 /*# sourceMappingURL=main.css.map */
