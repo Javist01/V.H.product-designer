@@ -11,6 +11,7 @@ ul, ol {
 button {
   cursor: pointer;
   border: none;
+  padding: 0;
 }
 
 .link {
@@ -282,6 +283,7 @@ body {
 }
 
 .footer_list {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -312,5 +314,37 @@ body {
 
 .footer_icon:hover .footer_svg {
   fill: var(--block);
+}
+
+.footer_btn-up:hover .footer_svg {
+  fill: var(--block);
+}
+
+.footer_btn-up {
+  width: 64px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  justify-content: right;
+  position: absolute;
+  right: 0;
+}
+
+.footer_btn-up:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 24px #9161B5;
+  border-radius: 2.42424e+07px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer_btn-up {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .footer_btn-up {
+    margin-right: 135px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
