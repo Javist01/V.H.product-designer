@@ -21,13 +21,19 @@
     &:not(:last-child){
         margin-bottom: 20px;
     }
-    
+    &:hover .name_items{
+        visibility: visible;
+    }
+    &:hover .main_projectName{
+        visibility: visible;
+    }
     @media screen and (min-width:1200px) {
         width: calc(100% / 3 - 24px);
         margin-left: 24px;
         margin-bottom: 24px;
         width: 450px;
         height: 320px;
+        display: inline-block;
 
         &:nth-child(6){
             width: 450px;
@@ -37,9 +43,7 @@
         }
     }
 
-    // @media screen and (min-width:1400px){
-    //     width: calc(100% / 3 - 24px);
-    // }
+
 }
 
 .main_item-blur{
@@ -47,28 +51,9 @@
     backdrop-filter: blur(12px);
 }
 
-.main_mobail_crms{
-    padding-top: 30px;
-    padding-right: 35px;
-    &{
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-    }
-}
-
-.main_mobail_crms_item{
-    width: 41px;
-    height: 22px;
-    border: 1px solid var(--white-gray);
-    border-radius: 50px;
-    &:not(:last-child){
-        margin-right: 20px;
-    }
-
-    @media screen and (min-width:1200px) {
-        display: none;
-    }
+.main-text{
+    text-align: right;
+    padding-right: 60px;    
 }
 
 .name_items{
@@ -81,12 +66,22 @@
     color: var(--white-gray);
     text-align: center;
     padding: 2.5px;
+
+    &{
+    width: 41px;
+    height: 22px;
+    border: 1px solid var(--white-gray);
+    border-radius: 50px;
+    }
+    @media screen and (min-width:1200px){
+        visibility: hidden;
+        &:not(:last-child){
+            margin-right: 10px;
+            margin-top: 15px;
+        }
+    }
 }
 
-// div_text
-// .main_text{
-
-// }
 
 
 .main_text_p{
@@ -99,9 +94,6 @@
     text-align: center;
 }
 
-// .main_link{
-
-// }
 
 .main_img{
     padding-top: 30px;
@@ -117,11 +109,8 @@
             transform: scale(1.15);
         }
     }
-
-    &:hover .main_projectName .main_mobail_crms_item{
-        display: block;
-    }
 }
+
 
 .main_projectName{
     display: inline-block;
@@ -131,13 +120,16 @@
     font-size: 16px;
     line-height: 22px;
     color: var(--white-gray);
-    padding: 30px 0 0 27px;
+    padding-top: 20px;
+    padding-left: 12px;
 
     @media screen and (min-width:1200px) {
-        padding-left: 32px;
+        padding-left: 64px;
         font-size: 20px;
         line-height: 27px;
-        display: none;
+        visibility: hidden;
     }
 
 }
+
+
