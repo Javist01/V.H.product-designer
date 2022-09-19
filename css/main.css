@@ -171,14 +171,6 @@ body {
   margin-bottom: 20px;
 }
 
-.main_item:hover .name_items {
-  visibility: visible;
-}
-
-.main_item:hover .main_projectName {
-  visibility: visible;
-}
-
 @media screen and (min-width: 1200px) {
   .main_item {
     width: calc(100% / 3 - 24px);
@@ -194,6 +186,12 @@ body {
     background: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(12px);
   }
+  .main_item:hover .name_items {
+    visibility: visible;
+  }
+  .main_item:hover .main_projectName {
+    visibility: visible;
+  }
 }
 
 .main_item-blur {
@@ -202,6 +200,7 @@ body {
 }
 
 .main-text {
+  visibility: hidden;
   text-align: right;
   padding-right: 60px;
 }
@@ -272,6 +271,7 @@ body {
   color: var(--white-gray);
   padding-top: 20px;
   padding-left: 12px;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 1200px) {
@@ -279,7 +279,6 @@ body {
     padding-left: 64px;
     font-size: 20px;
     line-height: 27px;
-    visibility: hidden;
   }
 }
 
