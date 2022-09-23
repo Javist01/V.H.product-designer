@@ -1,26 +1,38 @@
-// .section_name{
-//     position: fixed;
-//     z-index: 1;
-// }
+
+.header{
+    padding-top: 21px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 40px;
+        // position: sticky;
+        // top: 0;
+    }
+}
+
+.section_name{
+    @media screen and (max-width: 1199px) {
+        width: 342px;
+
+    }
+}
 
 .header_name{
-    text-align: center;
+    text-align: right;
     font-family: 'Satoshi';
     font-style: normal;
     font-weight: 700;
-    font-size: 47px;
+    font-size: 48px;
     line-height: 65px;
     color: var(--white);
-
     @media screen and (min-width:1200px) {
-        // text-align: right;
+        text-align: right;
         font-size: 80px;
         line-height: 108px;
-        padding-left: 350px;
+        padding-right: 135px;
     }
     @media screen and (min-width:1400px){
-        text-align: right;
+        padding-right: 0;
     }
+
 }
 
 .header_jobName{
@@ -35,7 +47,7 @@
     @media screen and (min-width:1200px) {
         font-size: 40px;
         line-height: 54px;
-        padding-right: 150px;
+        padding-right: 135px;
     }
 
     @media screen and (min-width:1400px){
@@ -51,8 +63,11 @@
     margin-top: 33px;
 
     @media screen and (min-width:1200px) {
-        padding-right: 915px;
+        justify-content: left;
+        top: 114px;
+        padding-left: 135px;
         margin: 0;
+        position: absolute;
     }
 
     @media screen and (min-width:1400px){
