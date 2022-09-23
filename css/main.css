@@ -192,18 +192,6 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 1200px) {
-  .main_item:not(:last-child) {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .main_item:nth-child(6) {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .main_item {
     width: calc(100% / 3 - 24px);
@@ -234,6 +222,18 @@ body {
   .main_item:nth-child(6) {
     background: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(12px);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .main_item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .main_item:nth-child(6) {
+    display: none;
   }
 }
 
