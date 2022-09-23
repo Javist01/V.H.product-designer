@@ -319,7 +319,7 @@ body {
     height: 100%;
     object-fit: contain;
     border-radius: 8px;
-    background-image: url(/images/img-1.jpg);
+    background-image: url(../images/img-1.jpg);
   }
   .main_div_img .one_img:hover {
     transition: 1s;
