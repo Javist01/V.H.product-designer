@@ -32,6 +32,34 @@ function goTop() {
   }
   goTop();
 
+  // ------------------------------------------------------------------------------------
+
+// const sectionName = document.querySelector('h1')
+
+// window.addEventListener('scroll', () =>{
+//   const current = window.scrollY
+//   sectionName.style.fontSize = `clamp(5rem,${current}rem, 3.75rem)`
+
+// })
+
+
+
+
+  // $(function() {
+
+  //   $(window).scroll(function() {
+  
+  //     var mass = Math.min(20, 1+0.005*$(this).scrollTop());
+  
+  //     $('#font_size').css('transform', 'scale(' + mass + ')');
+  //   });
+  // });
+
+
+  // window.addEventListener('scroll',function(){
+  //   document.getElementById("font_size").style.fontSize=((document.body.scrollTop*.05)+14)+'px';
+  // });
+
 // уменьшение текста при скролле 
 
 // document.addEventListener('DOMContentLoaded', updateDivFontSize);
